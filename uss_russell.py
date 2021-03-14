@@ -4,30 +4,49 @@
 # First iteration: create a map with the routes traveled over the course of the war. Animated map by month - try plotly with mapbox.
 
 import json
-from flask import Flask, jsonify, render_template
+import requests
+from flask import Flask, jsonify, render_template, request, make_response
+import numpy as np
 import pandas as pd
 import plotly
 import plotly.express as px
 import plotly.graph_objects as go
 import os
+from datetime import datetime
+from config import api_key, mapbox_token
 
 app = Flask(__name__)
 
-mapbox_token = "your key here"
-api_key = "97b0a5778687b29af9fa0cf9fadbf1f3"
+@app.route("/")
+def index():
+    return render_template("index.html")
 
-def home():
-    return 
-
+@app.route("/maps")
 def map():
-    return
+    
+    
+    
+    return render_template(
+    # "visualizations.html", 
+    # article_headline_figure=article_headline_figure,
+    # boxplot_data=boxplot_data,
+    # boxplot_layout=boxplot_layout, 
+    # calendar_heatmap_data=calendar_heatmap_data,
+    # calendar_heatmap_layout=calendar_heatmap_layout,
+    # linechart_figure=linechart_figure,
+    # bigram_json=bigram_json,
+    # trigram_json=trigram_json,
+  )
 
+@app.route("/people")
 def bios():
     return
 
+@app.route("/places")
 def places():
     return
 
+@app.route("/things")
 def resources():
     return
 
@@ -41,7 +60,7 @@ def resources():
 # Challenge: ML to network ships and crewmembers who crossed paths during the war
 
 @app.route("/")
-def home():
+def index():
     tri_data, tri_layout = trigram_plot()
     return render_template("index.html", data=tri_data, layout=tri_layout)
 
