@@ -1,6 +1,6 @@
 ![0541417](https://user-images.githubusercontent.com/67195932/111854434-43242100-88ed-11eb-8893-9013fb3adb7d.jpg)
 # USS-Russell
-This app documents the history of the USS Russell, the ship my grandfather served on during WWII.
+This app, a work in progress, documents the history of the USS Russell, the ship my grandfather served on during WWII.
 
 # Resources
 * Book: Survivor, written by Barry Friedman, Medical Officer aboard the USS Russell from 1943 to 1945.
