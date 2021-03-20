@@ -1,0 +1,74 @@
+{% extends "parent.html" %}
+{% block content %}
+
+<br>
+<br>
+<div class="container">
+    
+    <!-- introduction -->
+    <div class="row">
+        <div class="col-md-7" id="scroll-gif">
+            <img class="img-fluid rounded float-left" src="../static/img/scroll.gif">
+        </div>
+        <div class="col-md-5 main-summary">
+            <p>Over the past several years, there has been a visceral shift in news consumption for many people from regular morning and evening news broadcasts to a 24-hour news cycle. Terms such as <a href="https://www.npr.org/2020/07/19/892728595/your-doomscrolling-breeds-anxiety-here-s-how-to-stop-the-cycle" target="_blank">Doomscrolling</a> and <a href="https://www.washingtonpost.com/news/inspired-life/wp/2017/02/06/suffering-from-headline-stress-disorder-since-trumps-win-youre-definitely-not-alone/" target="_blank">Headline Stress Disorder</a> popped up as a way to explain how people continue to be affected by the constant bombardment of new information and breaking stories. People have feelings about the news, but our question is: does the news itself project a particular feeling? </p>
+            <p>With data gathered from the New York Times Archives API, we analyzed over 50,000 news articles covering a full 3-year span, from 2015 to 2017. Natural Language Processing was used to examine sentiment across time, categories of news, and geographic locations. You can explore the data through visualizations, search through articles by keyword, and test the sentiment of your own news headline!</p>
+        </div>
+    </div>
+
+    <!-- more info -->
+    <br>
+    <div class="row">
+        <div class="col-md-12 main-summary">
+            <h1>Natural Language Processing Overview</h1>
+            <p>Natural Language Processing (NLP) is a form of machine learning that gleans information from humans' spoken or written words.  In this project, we performed a type of NLP called Sentiment Analysis.  Sentiment Analysis attempts to determine some measure of the "feeling" of a text; often this is described as the text's positivity or negativity.</p>
+            <p>There are many features of a word or sentence that influence the sentiment of the text--from the vocabulary to the meaning of a word or words in context to the punctuation and even to concepts such as irony or sarcasm.  No AI is perfect, and most sentiment analysis AI falls short of the ability of humans to interpret and comprehend the meaning of a text (of course, even among humans, many of us might disagree about what a text really means!).</p>
+            <p>For this project, we employed a simple form of sentiment analysis that uses a "lexicon," or a list of words that have been assigned meanings.  Such lexicons are built by analyzing many, many texts to determine how those individual words are most likely to convey a positive or negative sentiment.  A program that then applies a lexicon-based sentiment analysis to a text breaks the text down into "tokens" which are usually root words (e.g. the token of "running" would be "run") or sets of words (e.g. "not" plus the word it negates).  The pre-assigned sentiment values for tokens found in the lexicon are summed or averaged for the text the program is analyzing.</p>
+            <p>On this page, you will find sentiment scores for New York Times articles and headlines.  Often, the lexicon-based approach may misunderstand the meaning of words in the context of the article, or it might not recognize certain words altogether.  NLP and Sentiment Analysis are difficult tasks, and research continues to improve machines' ability to derive meaning from human language!</p>
+        </div>
+    </div>
+
+    <!-- add contributers -->
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-12 contributors">
+            <h1>Contributors</h1>
+            <p>Amy Banerji | Alicia Pelkey | Rachel Reynolds | David Vance </p>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-md-12 citations">
+            <h1>Citations</h1>
+
+            <ul>
+                <li><a href="https://github.com/cjhutto/vaderSentiment">VADER Sentiment Analysis</a>
+                    <li>C.J. Hutto and E.E. Gilbert. "VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text." Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI (June 2014).</li>
+                </li>
+                <br>
+                <li><a href="https://www.nltk.org/">Natural Language Toolkit (NLTK) Project</a>
+                    <li>Steven Bird, Edward Loper, and Ewan Klein. <i>Natural Language Processing with Python.</i> O’Reilly Media Inc. (2009).</li>
+                </li>
+                <br>
+                <li><a href="https://github.com/metalcorebear/NRCLex">NRCLex API</a>
+                    <li>Mark C. Bailey (2019).</li>
+                </li>
+                <br>
+                <li><a href="http://sentiment.nrc.ca/lexicons-for-research/">NRC Lexicon</a>
+                    <li>National Research Council Canada (2016).</li>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+    
+
+</div>
+
+
+
+{% endblock %}
