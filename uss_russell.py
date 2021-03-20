@@ -1,4 +1,4 @@
-
+# Core script
 
 import pandas as pd
 import plotly
@@ -8,6 +8,16 @@ import os, csv, requests, json, datetime
 import numpy as np
 from config import mapbox_token
 from datetime import date
+import re
+# from sklearn.feature_extraction.text import CountVectorizer
+from flask import Flask, jsonify, render_template
+# import nltk
+# from nltk.corpus import stopwords
+
+app = Flask(__name__)
+
+PATH = os.path.join("data", "files", "headlines_with_nid.csv")
+
 
 px.set_mapbox_access_token(mapbox_token)
 
@@ -153,3 +163,11 @@ fig.update_traces(
     ),  # Color starts with navy but changes to default after first frame. Recall this from eBird project...
 )
 fig.show()
+
+@app.route("/")
+def home():
+    tri_data, tri_layout = trigram_plot()
+    return render_template("index.html", data=tri_data, layout=tri_layout)
+
+if __name__ == "__main__":
+    app.run(debug=True)
