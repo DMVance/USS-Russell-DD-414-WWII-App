@@ -3,6 +3,7 @@
 This app documents the history of the USS Russell, the ship my grandfather served on during WWII.
 
 # Resources
+* Book: Survivor, written by Barry Friedman, Medical Officer aboard the USS Russell from 1943 to 1945.
 * https://www.navalcovermuseum.org/wiki/RUSSELL_DD_414
 * https://destroyerhistory.org/goldplater/ussrussell/
 * https://en.wikipedia.org/wiki/USS_Russell_(DD-414)
