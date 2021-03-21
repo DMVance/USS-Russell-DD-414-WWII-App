@@ -155,7 +155,7 @@ def russ_map():               # Have to use JS format to render on webpage?
         mapbox_style="basic",
         width=1250,
         height=900,
-        animation_frame="event",  # The single line that brings animation to the map based on the parameter indicated
+        animation_frame="event_date",  # The single line that brings animation to the map based on the parameter indicated
     )
     fig.update_traces(
         marker_size=20,
