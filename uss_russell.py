@@ -9,8 +9,8 @@ import numpy as np
 from config import mapbox_token
 from datetime import date
 import re
-# from sklearn.feature_extraction.text import CountVectorizer
 from flask import Flask, jsonify, render_template
+# from sklearn.feature_extraction.text import CountVectorizer
 # import nltk
 # from nltk.corpus import stopwords
 
@@ -139,9 +139,10 @@ px.set_mapbox_access_token(mapbox_token)
 #     `'outdoors'`, `'light'`, `'dark'`, `'satellite'`, `'satellite-
 #     streets'`.
 
-df = pd.read_csv("timeline.csv")
+# df = pd.read_csv("timeline.csv")
 
-def russ_map(df):               # Have to use JS format to render on webpage?
+def russ_map():               # Have to use JS format to render on webpage?
+    df = pd.read_csv("timeline.csv")
     fig = px.scatter_mapbox(
         df,
         lat="latitude",
@@ -163,19 +164,19 @@ def russ_map(df):               # Have to use JS format to render on webpage?
             type="scattermapbox"
         ),  # Color starts with navy but changes to default after first frame. Recall this from eBird project...
     )
-    plotly.io.write_json(location_map, "static/js/location_map.json")
-return 
+    # plotly.io.write_json(fig, "static/js/location_map.json")
+    return json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
 #######################################################################################
 
-russ_map(df)
+# russ_map(df)
 
 #######################################################################################
 
 @app.route("/")
 def home():
     fig = russ_map()
-    return render_template("index.html", fig=fig)
+    return render_template("russ.html", fig=fig)
 
 if __name__ == "__main__":
     app.run(debug=True)
