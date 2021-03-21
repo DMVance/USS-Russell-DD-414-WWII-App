@@ -15,10 +15,22 @@ import os
 from datetime import datetime
 from config import api_key, mapbox_token
 
+from uss_russell.py import russ_map
+
 app = Flask(__name__)
 
 @app.route("/")
 def index():
+    # Read in the data
+    # FILE_PATH = os.path.join("USS_Russell", "static", "data", "CSV file")
+    # df = pd.read_csv(FILE_PATH)
+    russell_map = russ_map(df)
+
+    with open(os.path.join("USS_Russell", "static", "js", "russ_map.json"), "r") as file:
+        russ_dict = json.load(file)
+
+    loc_map = json.dumps(russ_dict)
+
     return render_template("index.html")
 
 @app.route("/maps")
@@ -38,17 +50,17 @@ def map():
     # trigram_json=trigram_json,
   )
 
-@app.route("/people")
-def bios():
-    return
+# @app.route("/people")
+# def bios():
+#     return
 
-@app.route("/places")
-def places():
-    return
+# @app.route("/places")
+# def places():
+#     return
 
-@app.route("/things")
-def resources():
-    return
+# @app.route("/things")
+# def resources():
+#     return
 
 
 
