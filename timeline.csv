@@ -1,13 +1,13 @@
-event,date,location,comment,latitude,longitude
-Keel Date,1937-12-20 00:00:00,"Newport News, VA",Newport News Shipbuilding & Drydock Co.,37.0870821,-76.4730122
-Launch Date,1938-12-08 00:00:00,"Newport News, VA",NA,37.0870821,-76.4730122
-Commissioned,1939-11-03 00:00:00,"Newport News, VA",NA,37.0870821,-76.4730122
-Lend Lease Act Signing,1940-09-01 00:00:00,"Halifax, Nova Scotia",Exact date in September unknown. Check historical record on Lend-Lease Act.,44.65,-63.6
-Target Practice,1941-12-07 12:53:00,"Cosco Bay, Maine",NA,43.6408,-70.25744
-Repairs,1941-12-17 00:00:00,New York Navy Yard,Received orders for the Pacific sailing with the carrier Yorktown and four other destroyers.,40.712345,-74.005531
-Submarine Encounter,1941-12-20 00:00:00,Pacific near Panama Canal,Attacked probable submarine shortly after entering Pacific Ocean. Location uncertain.,5.840081,-83.121784
-Airmen Rescue,1941-12-23 00:00:00,Pacific,Rescued two airmen crashed after takeoff from Yorktown. Location uncertain.,15.30538,-108.701307
-Set sail with reinforcements,1942-01-06 00:00:00,San Diego Naval Base,"Sailed west, screening reinforcements to Samoa.",32.7152778,-117.1563889
-F4F Wildcat pilot rescue,1942-01-08 00:00:00,Pacific,F4F Wildcat crashed after takeoff from Yorktown. Russell rescued pilot.,23.4871,-126.9387
-Arrival in Samoa,1942-01-20 00:00:00,"Pago Pago, Samoa",Arrived in Samoa with reinforcements.,-14.27328,-170.70297
-Decommissioned,1945-11-15 00:00:00,"San Diego, CA",NA,32.7152778,-117.1563889
+event,event_date,location,comment,latitude,longitude,date
+Keel Date,12-20-1937,"Newport News, VA",Newport News Shipbuilding & Drydock Co.,37.0870821,-76.4730122,1937-12-20 00:00:00
+Launch Date,12-8-1938,"Newport News, VA",NA,37.0870821,-76.4730122,1938-12-08 00:00:00
+Commissioned,11-3-1939,"Newport News, VA",NA,37.0870821,-76.4730122,1939-11-03 00:00:00
+Lend Lease Act Signing,09-01-1940,"Halifax, Nova Scotia",Exact date in September unknown. Check historical record on Lend-Lease Act.,44.65,-63.6,1940-09-01 00:00:00
+Target Practice,12-7-1941 12:53,"Cosco Bay, Maine",NA,43.6408,-70.25744,1941-12-07 12:53:00
+Repairs,12-17-1941,New York Navy Yard,Received orders for the Pacific sailing with the carrier Yorktown and four other destroyers.,40.712345,-74.005531,1941-12-17 00:00:00
+Submarine Encounter,12-20-1941,Pacific near Panama Canal,Attacked probable submarine shortly after entering Pacific Ocean. Location uncertain.,5.840081,-83.121784,1941-12-20 00:00:00
+Airmen Rescue,12-23-1941,Pacific,Rescued two airmen crashed after takeoff from Yorktown. Location uncertain.,15.30538,-108.701307,1941-12-23 00:00:00
+Set sail with reinforcements,01-06-1942,San Diego Naval Base,"Sailed west, screening reinforcements to Samoa.",32.7152778,-117.1563889,1942-01-06 00:00:00
+F4F Wildcat pilot rescue,01-08-1942,Pacific,F4F Wildcat crashed after takeoff from Yorktown. Russell rescued pilot.,23.4871,-126.9387,1942-01-08 00:00:00
+Arrival in Samoa,01-20-1942,"Pago Pago, Samoa",Arrived in Samoa with reinforcements.,-14.27328,-170.70297,1942-01-20 00:00:00
+Decommissioned,11-15-1945,"San Diego, CA",NA,32.7152778,-117.1563889,1945-11-15 00:00:00
