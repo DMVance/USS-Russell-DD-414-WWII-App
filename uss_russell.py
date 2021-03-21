@@ -16,7 +16,7 @@ from flask import Flask, jsonify, render_template
 
 app = Flask(__name__)
 
-PATH = os.path.join("data", "files", "headlines_with_nid.csv")
+# PATH = os.path.join("data", "files", "headlines_with_nid.csv")
 
 
 px.set_mapbox_access_token(mapbox_token)
@@ -141,33 +141,41 @@ px.set_mapbox_access_token(mapbox_token)
 
 df = pd.read_csv("timeline.csv")
 
-fig = px.scatter_mapbox(
-    df,
-    lat="latitude",
-    lon="longitude",
-    #     color="action",
-    #     size="event",
-    hover_name="event",
-    hover_data=["date", "location", "comment"],
-    title="Events and Places of the USS Russell DD 414 - WWII",
-    mapbox_style="basic",
-    width=1250,
-    height=900,
-    animation_frame="event",  # The single line that brings animation to the map based on the parameter indicated
-)
-fig.update_traces(
-    marker_size=20,
-    marker_color="navy",
-    selector=dict(
-        type="scattermapbox"
-    ),  # Color starts with navy but changes to default after first frame. Recall this from eBird project...
-)
-fig.show()
+def russ_map(df):
+    fig = px.scatter_mapbox(
+        df,
+        lat="latitude",
+        lon="longitude",
+        #     color="action",
+        #     size="event",
+        hover_name="event",
+        hover_data=["date", "location", "comment"],
+        title="Events and Places of the USS Russell DD 414 - WWII",
+        mapbox_style="basic",
+        width=1250,
+        height=900,
+        animation_frame="event",  # The single line that brings animation to the map based on the parameter indicated
+    )
+    fig.update_traces(
+        marker_size=20,
+        marker_color="navy",
+        selector=dict(
+            type="scattermapbox"
+        ),  # Color starts with navy but changes to default after first frame. Recall this from eBird project...
+    )
+    plotly.io.write_json(location_map, "static/js/location_map.json")
+return 
+
+#######################################################################################
+
+russ_map(df)
+
+#######################################################################################
 
 @app.route("/")
 def home():
-    tri_data, tri_layout = trigram_plot()
-    return render_template("index.html", data=tri_data, layout=tri_layout)
+    fig_plot = location_map
+    return render_template("index.html", data=fig_plot, layout=tri_layout)
 
 if __name__ == "__main__":
     app.run(debug=True)
