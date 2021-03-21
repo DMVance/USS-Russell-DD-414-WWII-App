@@ -2,6 +2,7 @@
 # Also the Princeton and Columbus
 # Machine learning to identify ships and people that were together in various battles or at different times during the war
 # First iteration: create a map with the routes traveled over the course of the war. Animated map by month - try plotly with mapbox.
+# Follow structure of news-app for initial construction.
 
 import json
 import requests
