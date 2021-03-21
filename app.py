@@ -33,12 +33,12 @@ def index():
 
     return render_template("index.html")
 
-@app.route("/maps")
-def map():
+# @app.route("/maps")
+# def map():
     
     
     
-    return render_template(
+#     return render_template(
     # "visualizations.html", 
     # article_headline_figure=article_headline_figure,
     # boxplot_data=boxplot_data,
@@ -76,30 +76,30 @@ def index():
     tri_data, tri_layout = trigram_plot()
     return render_template("index.html", data=tri_data, layout=tri_layout)
 
-@app.route("/map")
-def map():
-    bi_data, bi_layout = bigram_plot()
-    return render_template("bigram.html", data=bi_data, layout=bi_layout)
+# @app.route("/map")
+# def map():
+#     bi_data, bi_layout = bigram_plot()
+#     return render_template("bigram.html", data=bi_data, layout=bi_layout)
 
-@app.route("/bios")
-def bios():
-    bi_data, bi_layout = bigram_plot()
-    return render_template("bigram.html", data=bi_data, layout=bi_layout)
+# @app.route("/bios")
+# def bios():
+#     bi_data, bi_layout = bigram_plot()
+#     return render_template("bigram.html", data=bi_data, layout=bi_layout)
 
-@app.route("/places")
-def places():
-    bi_data, bi_layout = bigram_plot()
-    return render_template("bigram.html", data=bi_data, layout=bi_layout)
+# @app.route("/places")
+# def places():
+#     bi_data, bi_layout = bigram_plot()
+#     return render_template("bigram.html", data=bi_data, layout=bi_layout)
 
-@app.route("/resources")
-def resources():
-    bi_data, bi_layout = bigram_plot()
-    return render_template("bigram.html", data=bi_data, layout=bi_layout)
+# @app.route("/resources")
+# def resources():
+#     bi_data, bi_layout = bigram_plot()
+#     return render_template("bigram.html", data=bi_data, layout=bi_layout)
 
-@app.route("/MLnetwork")
-def MLnetwork():
-    bi_data, bi_layout = bigram_plot()
-    return render_template("bigram.html", data=bi_data, layout=bi_layout)
+# @app.route("/MLnetwork")
+# def MLnetwork():
+#     bi_data, bi_layout = bigram_plot()
+#     return render_template("bigram.html", data=bi_data, layout=bi_layout)
 
 if __name__ == "__main__":
     app.run(debug=True)
