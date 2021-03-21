@@ -141,7 +141,7 @@ px.set_mapbox_access_token(mapbox_token)
 
 df = pd.read_csv("timeline.csv")
 
-def russ_map(df):
+def russ_map(df):               # Have to use JS format to render on webpage?
     fig = px.scatter_mapbox(
         df,
         lat="latitude",
@@ -174,8 +174,8 @@ russ_map(df)
 
 @app.route("/")
 def home():
-    fig_plot = location_map
-    return render_template("index.html", data=fig_plot, layout=tri_layout)
+    fig = russ_map()
+    return render_template("index.html", fig=fig)
 
 if __name__ == "__main__":
     app.run(debug=True)
