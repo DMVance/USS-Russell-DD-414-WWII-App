@@ -10,14 +10,19 @@ from config import mapbox_token
 from datetime import date
 import re
 from flask import Flask, jsonify, render_template
+from flask_sqlalchemy import SQLAlchemy
+
 # from sklearn.feature_extraction.text import CountVectorizer
 # import nltk
 # from nltk.corpus import stopwords
 
 app = Flask(__name__)
 
-# PATH = os.path.join("data", "files", "headlines_with_nid.csv")
+# When database is implemented, will need something like this:
+# app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DB_CONN")
+# db = SQLAlchemy(app)
 
+# PATH = os.path.join("data", "files", "headlines_with_nid.csv")
 
 px.set_mapbox_access_token(mapbox_token)
 
