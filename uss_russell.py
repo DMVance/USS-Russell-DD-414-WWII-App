@@ -145,7 +145,7 @@ from flask import Flask, jsonify, render_template
 #     `'outdoors'`, `'light'`, `'dark'`, `'satellite'`, `'satellite-
 #     streets'`.
 
-# df = pd.read_csv("timeline.csv")
+df = pd.read_csv("timeline.csv")
 
 def russ_map():               # Have to use JS format to render on webpage?
     df = pd.read_csv("timeline.csv")
