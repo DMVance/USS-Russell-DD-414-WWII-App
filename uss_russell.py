@@ -6,7 +6,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import os, csv, requests, json, datetime
 import numpy as np
-# from config import mapbox_token
+from config import mapbox_token
 from datetime import date
 # import re
 from flask import Flask, jsonify, render_template
@@ -181,7 +181,7 @@ def russ_map():               # Have to use JS format to render on webpage?
 @app.route("/")
 def home():
     fig = russ_map()
-    return render_template("templates/russ.html", fig=fig)
+    return render_template("russ.html", fig=fig)
 
 if __name__ == "__main__":
     app.run(debug=True)
