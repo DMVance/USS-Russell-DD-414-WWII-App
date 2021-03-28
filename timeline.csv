@@ -1,20 +1,20 @@
-event,event_date,location,comment,latitude,longitude,date
-Keel Date,12-20-1937,"Newport News, VA",Newport News Shipbuilding & Drydock Co.,37.0870821,-76.4730122,1937-12-20 00:00:00
-Launch Date,12-8-1938,"Newport News, VA",NA,37.0870821,-76.4730122,1938-12-08 00:00:00
-Commissioned,11-3-1939,"Newport News, VA",NA,37.0870821,-76.4730122,1939-11-03 00:00:00
-Lend Lease Act Signing,09-01-1940,"Halifax, Nova Scotia",Exact date in September unknown. Check historical record on Lend-Lease Act.,44.65,-63.6,1940-09-01 00:00:00
-Target Practice,12-7-1941 12:53,"Cosco Bay, Maine",NA,43.6408,-70.25744,1941-12-07 12:53:00
-Repairs,12-17-1941,New York Navy Yard,Received orders for the Pacific sailing with the carrier Yorktown and four other destroyers.,40.712345,-74.005531,1941-12-17 00:00:00
-Submarine Encounter,12-20-1941,Pacific near Panama Canal,Attacked probable submarine shortly after entering Pacific Ocean. Location uncertain.,5.840081,-83.121784,1941-12-20 00:00:00
-Airmen Rescue,12-23-1941,Pacific,Rescued two airmen crashed after takeoff from Yorktown. Location uncertain.,15.30538,-108.701307,1941-12-23 00:00:00
-Set sail with reinforcements,01-06-1942,San Diego Naval Base,"Sailed west, screening reinforcements to Samoa.",32.7152778,-117.1563889,1942-01-06 00:00:00
-F4F Wildcat pilot rescue,01-08-1942,Pacific,F4F Wildcat crashed after takeoff from Yorktown. Russell rescued pilot.,23.4871,-126.9387,1942-01-08 00:00:00
-Arrival in Samoa,01-20-1942,"Pago Pago, Samoa",Arrived in Samoa with reinforcements.,-14.27328,-170.70297,1942-01-20 00:00:00
-Depart Samoa enroute to Gilbert Islands,01-25-1942,"Pago Pago, Samoa",Left Samoa for joint attack on Gilbert and Marshall Islands with Yorktown and Enterprise task forces.,-13.9742,-170.8775,1942-01-25 00:00:00
-Attack at the Gilbert Islands,02-01-1942,Gilbert Islands,"Aircraft from Yorktown attack Japanese naval bases. Kiribati, Tarawa.",0.0584,-174.0021,1942-02-01 00:00:00
-"Arrive Pearl Harbor, Hawaii",02-06-1942,"Pearl Harbor, Hawaii",Repairs and resupply at Pearl Harbor.,21.33926,-157.960922,1942-02-06 00:00:00
-Attack at New Guinea,03-10-1942,"Lae and Salamaua, New Guinea",Attacked Japanese troop transports landing in New Guinea in preparation for air assault on Australian-held Port Moresby.,-8.6395,145.7876,1942-03-10 00:00:00
-Depth charge attack,03-21-1942,Coral Sea,Probable kill. Approximate date and location.,-16.1189,156.7078,1942-03-21 00:00:00
-Arrival in New Caledonia,03-31-1942,"Noumea, New Caledonia",Re-supply and R&R for the crew.,-22.2942,166.4678,1942-03-31 00:00:00
-Battle of the Coral Sea,05-07-1942,Coral Sea,"Engaged enemy planes while screening Lexington and Yorktown. Lexington was hit, heavily damaged and abandoned.",-19.3618,155.9041,1942-05-07 00:00:00
-Decommissioned,11-15-1945,"San Diego, CA",NA,32.7152778,-117.1563889,1945-11-15 00:00:00
+event,event_date,location,comment,latitude,longitude,type,date
+Keel Date,12-20-1937,"Newport News, VA",Newport News Shipbuilding & Drydock Co.,37.0870821,-76.4730122,Port,1937-12-20 00:00:00
+Launch Date,12-8-1938,"Newport News, VA",NA,37.0870821,-76.4730122,Port,1938-12-08 00:00:00
+Commissioned,11-3-1939,"Newport News, VA",NA,37.0870821,-76.4730122,Port,1939-11-03 00:00:00
+Lend Lease Act Signing,09-01-1940,"Halifax, Nova Scotia",Exact date in September unknown. Check historical record on Lend-Lease Act.,44.65,-63.6,Port,1940-09-01 00:00:00
+Target Practice,12-7-1941 12:53,"Cosco Bay, Maine",NA,43.6408,-70.25744,Cruising,1941-12-07 12:53:00
+Repairs,12-17-1941,New York Navy Yard,Received orders for the Pacific sailing with the carrier Yorktown and four other destroyers.,40.712345,-74.005531,Port,1941-12-17 00:00:00
+Submarine Encounter,12-20-1941,Pacific near Panama Canal,Attacked probable submarine shortly after entering Pacific Ocean. Location uncertain.,5.840081,-83.121784,Battle,1941-12-20 00:00:00
+Airmen Rescue,12-23-1941,Pacific,Rescued two airmen crashed after takeoff from Yorktown. Location uncertain.,15.30538,-108.701307,Rescue,1941-12-23 00:00:00
+Set sail with reinforcements,01-06-1942,San Diego Naval Base,"Sailed west, screening reinforcements to Samoa.",32.7152778,-117.1563889,Convoy,1942-01-06 00:00:00
+F4F Wildcat pilot rescue,01-08-1942,Pacific,F4F Wildcat crashed after takeoff from Yorktown. Russell rescued pilot.,23.4871,-126.9387,Convoy,1942-01-08 00:00:00
+Arrival in Samoa,01-20-1942,"Pago Pago, Samoa",Arrived in Samoa with reinforcements.,-14.27328,-170.70297,Port,1942-01-20 00:00:00
+Depart Samoa enroute to Gilbert Islands,01-25-1942,"Pago Pago, Samoa",Left Samoa for joint attack on Gilbert and Marshall Islands with Yorktown and Enterprise task forces.,-13.9742,-170.8775,Convoy,1942-01-25 00:00:00
+Attack at the Gilbert Islands,02-01-1942,Gilbert Islands,"Aircraft from Yorktown attack Japanese naval bases. Kiribati, Tarawa.",0.0584,-174.0021,Battle,1942-02-01 00:00:00
+"Arrive Pearl Harbor, Hawaii",02-06-1942,"Pearl Harbor, Hawaii",Repairs and resupply at Pearl Harbor.,21.33926,-157.960922,Port,1942-02-06 00:00:00
+Attack at New Guinea,03-10-1942,"Lae and Salamaua, New Guinea",Attacked Japanese troop transports landing in New Guinea in preparation for air assault on Australian-held Port Moresby.,-8.6395,145.7876,Battle,1942-03-10 00:00:00
+Depth charge attack,03-21-1942,Coral Sea,Probable kill. Approximate date and location.,-16.1189,156.7078,Battle,1942-03-21 00:00:00
+Arrival in New Caledonia,03-31-1942,"Noumea, New Caledonia",Re-supply and R&R for the crew.,-22.2942,166.4678,Port,1942-03-31 00:00:00
+Battle of the Coral Sea,05-07-1942,Coral Sea,"Engaged enemy planes while screening Lexington and Yorktown. Lexington was hit, heavily damaged and abandoned.",-19.3618,155.9041,Battle,1942-05-07 00:00:00
+Decommissioned,11-15-1945,"San Diego, CA",NA,32.7152778,-117.1563889,Port,1945-11-15 00:00:00
