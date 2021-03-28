@@ -6,15 +6,16 @@ import plotly.express as px
 import plotly.graph_objects as go
 import os, csv, requests, json, datetime
 import numpy as np
-from config import mapbox_token
+# from config import mapbox_token
 from datetime import date
 # import re
 from flask import Flask, jsonify, render_template
 # from flask_sqlalchemy import SQLAlchemy
-
 # from sklearn.feature_extraction.text import CountVectorizer
 # import nltk
 # from nltk.corpus import stopwords
+
+mapbox_token = os.getenv("mapbox_token")
 
 app = Flask(__name__)
 
