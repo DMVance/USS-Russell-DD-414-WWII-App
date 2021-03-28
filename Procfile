@@ -1,1 +1,1 @@
-web: gunicorn uss_russell:app
+web: gunicorn app:app
