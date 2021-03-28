@@ -1,5 +1,5 @@
 # This is a webpage devoted to honoring those who served on the USS Russell during WWII.
-# Also the Princeton and Columbus
+# Also the Gwin, Princeton and Columbus
 # Machine learning to identify ships and people that were together in various battles or at different times during the war
 # First iteration: create a map with the routes traveled over the course of the war. Animated map by month - try plotly with mapbox.
 # Follow structure of news-app for initial construction.
@@ -15,24 +15,28 @@ import plotly.graph_objects as go
 import os
 from datetime import datetime
 from config import api_key, mapbox_token
-
 from uss_russell.py import russ_map
 
 app = Flask(__name__)
+
+# mapbox_token = os.getenv("mapbox_token")
+# px.set_mapbox_access_token(mapbox_token)
 
 @app.route("/")
 def index():
     # Read in the data
     # FILE_PATH = os.path.join("USS_Russell", "static", "data", "CSV file")
     # df = pd.read_csv(FILE_PATH)
-    russell_map = russ_map(df)
+    # russell_map = russ_map(df)
 
-    with open(os.path.join("USS_Russell", "static", "js", "russ_map.json"), "r") as file:
-        russ_dict = json.load(file)
+    # with open(os.path.join("USS_Russell", "static", "js", "russ_map.json"), "r") as file:
+    #     russ_dict = json.load(file)
 
-    loc_map = json.dumps(russ_dict)
+    # loc_map = json.dumps(russ_dict)
 
-    return render_template("index.html")
+    fig = russ_map()
+
+    return render_template("russ.html", fig=fig)
 
 # @app.route("/maps")
 # def map():
@@ -49,7 +53,7 @@ def index():
     # linechart_figure=linechart_figure,
     # bigram_json=bigram_json,
     # trigram_json=trigram_json,
-  )
+#   )
 
 # @app.route("/people")
 # def bios():
@@ -72,10 +76,10 @@ def index():
 # Resources page with links to media
 # Challenge: ML to network ships and crewmembers who crossed paths during the war
 
-@app.route("/")
-def index():
-    tri_data, tri_layout = trigram_plot()
-    return render_template("index.html", data=tri_data, layout=tri_layout)
+# @app.route("/")
+# def index():
+#     tri_data, tri_layout = trigram_plot()
+#     return render_template("index.html", data=tri_data, layout=tri_layout)
 
 # @app.route("/map")
 # def map():
