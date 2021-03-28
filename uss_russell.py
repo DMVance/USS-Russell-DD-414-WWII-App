@@ -17,7 +17,7 @@ from flask import Flask, jsonify, render_template
 
 mapbox_token = os.getenv("mapbox_token")
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
 # When database is implemented, will need something like this:
 # app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DB_CONN")
@@ -179,10 +179,10 @@ def russ_map():               # Have to use JS format to render on webpage?
 
 #######################################################################################
 
-@app.route("/")
-def home():
-    fig = russ_map()
-    return render_template("russ.html", fig=fig)
+# @app.route("/")
+# def home():
+#     fig = russ_map()
+#     return render_template("russ.html", fig=fig)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
