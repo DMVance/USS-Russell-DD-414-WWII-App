@@ -182,7 +182,7 @@ def russ_map():               # Have to use JS format to render on webpage?
 @app.route("/")
 def home():
     fig = russ_map()
-    return render_template("parent.html", fig=fig)
+    return render_template("index.html", fig=fig)
 
 if __name__ == "__main__":
     app.run(debug=True)
