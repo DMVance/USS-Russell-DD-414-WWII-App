@@ -8,9 +8,9 @@ import os, csv, requests, json, datetime
 import numpy as np
 from config import mapbox_token
 from datetime import date
-import re
+# import re
 from flask import Flask, jsonify, render_template
-from flask_sqlalchemy import SQLAlchemy
+# from flask_sqlalchemy import SQLAlchemy
 
 # from sklearn.feature_extraction.text import CountVectorizer
 # import nltk
@@ -181,7 +181,7 @@ def russ_map():               # Have to use JS format to render on webpage?
 @app.route("/")
 def home():
     fig = russ_map()
-    return render_template("russ.html", fig=fig)
+    return render_template("templates/russ.html", fig=fig)
 
 if __name__ == "__main__":
     app.run(debug=True)
