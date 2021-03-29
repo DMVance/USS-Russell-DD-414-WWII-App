@@ -19,8 +19,8 @@ from uss_russell.py import russ_map
 
 app = Flask(__name__)
 
-mapbox_token = os.getenv("mapbox_token")
-px.set_mapbox_access_token(mapbox_token)
+# mapbox_token = os.getenv("mapbox_token")
+# px.set_mapbox_access_token(mapbox_token)
 
 @app.route("/")
 def index():

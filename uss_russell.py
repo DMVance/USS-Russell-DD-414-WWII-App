@@ -15,7 +15,7 @@ from flask import Flask, jsonify, render_template
 # import nltk
 # from nltk.corpus import stopwords
 
-# mapbox_token = os.getenv("mapbox_token")
+mapbox_token = os.getenv("mapbox_token")
 
 # app = Flask(__name__)
 
@@ -25,7 +25,7 @@ from flask import Flask, jsonify, render_template
 
 # PATH = os.path.join("data", "files", "headlines_with_nid.csv")
 
-# px.set_mapbox_access_token(mapbox_token)
+px.set_mapbox_access_token(mapbox_token)
 
 # Best to build this here or better to make in a CSV or Excel file first?
 # Timeline = Event, Date, Location, Commentary, Latitude, Longitude, Action
