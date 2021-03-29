@@ -15,7 +15,7 @@ import plotly.graph_objects as go
 import os
 from datetime import datetime
 # from config import api_key, mapbox_token
-from uss_russell.py import russ_map
+from uss_russell import russ_map
 
 app = Flask(__name__)
 
