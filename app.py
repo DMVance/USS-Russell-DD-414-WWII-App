@@ -7,42 +7,26 @@
 import json
 import requests
 from flask import Flask, jsonify, render_template, request, make_response
-import numpy as np
-import pandas as pd
-import plotly
-import plotly.express as px
-import plotly.graph_objects as go
-import os
-from datetime import datetime
-# from config import api_key, mapbox_token
+# import numpy as np
+# import pandas as pd
+# import plotly
+# import plotly.express as px
+# import plotly.graph_objects as go
+# import os
+# from datetime import datetime
 from uss_russell import russ_map
+# from config import api_key, mapbox_token
 
 app = Flask(__name__)
 
-# mapbox_token = os.getenv("mapbox_token")
-# px.set_mapbox_access_token(mapbox_token)
-
 @app.route("/")
 def index():
-    # Read in the data
-    # FILE_PATH = os.path.join("USS_Russell", "static", "data", "CSV file")
-    # df = pd.read_csv(FILE_PATH)
-    # russell_map = russ_map(df)
-
-    # with open(os.path.join("USS_Russell", "static", "js", "russ_map.json"), "r") as file:
-    #     russ_dict = json.load(file)
-
-    # loc_map = json.dumps(russ_dict)
-
     fig = russ_map()
-
     return render_template("russ.html", fig=fig)
 
 # @app.route("/maps")
 # def map():
-    
-    
-    
+
 #     return render_template(
     # "visualizations.html", 
     # article_headline_figure=article_headline_figure,
