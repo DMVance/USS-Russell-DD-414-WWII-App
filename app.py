@@ -7,13 +7,6 @@
 import json
 import requests
 from flask import Flask, jsonify, render_template, request, make_response
-# import numpy as np
-# import pandas as pd
-# import plotly
-# import plotly.express as px
-# import plotly.graph_objects as go
-# import os
-# from datetime import datetime
 from uss_russell import russ_map
 # from config import api_key, mapbox_token
 
