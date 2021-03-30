@@ -1,4 +1,4 @@
-# Core script
+# Core Script
 
 import pandas as pd
 import plotly
@@ -6,16 +6,17 @@ import plotly.express as px
 import plotly.graph_objects as go
 import os, csv, requests, json, datetime
 import numpy as np
-# from config import mapbox_token
 from datetime import date
-# import re
 from flask import Flask, jsonify, render_template
+# import re
+# from config import mapbox_token
 # from flask_sqlalchemy import SQLAlchemy
 # from sklearn.feature_extraction.text import CountVectorizer
 # import nltk
 # from nltk.corpus import stopwords
 
 mapbox_token = os.getenv("mapbox_token")
+px.set_mapbox_access_token(mapbox_token)
 
 # app = Flask(__name__)
 
@@ -25,7 +26,6 @@ mapbox_token = os.getenv("mapbox_token")
 
 # PATH = os.path.join("data", "files", "headlines_with_nid.csv")
 
-px.set_mapbox_access_token(mapbox_token)
 
 # Best to build this here or better to make in a CSV or Excel file first?
 # Timeline = Event, Date, Location, Commentary, Latitude, Longitude, Action
