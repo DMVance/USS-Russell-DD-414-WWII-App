@@ -147,7 +147,7 @@ px.set_mapbox_access_token(mapbox_token)
 
 df = pd.read_csv("timeline.csv")
 
-def russ_map():               # Have to use JS format to render on webpage?
+def russ_map():               # Have to use JS format to render on webpage? This is JS format... python format would be "lat": "latitude", etc...
     df = pd.read_csv("timeline.csv")
     fig = px.scatter_mapbox(
         df,
