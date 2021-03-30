@@ -14,7 +14,6 @@
         <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/uss-russell-dd414.css') }}">
-        <!-- <link rel="icon" href="{{ url_for('static', filename='img/news_icon.png') }}"> -->
         <title>USS Russell DD-414</title>
         
     </head>
@@ -26,9 +25,6 @@
             <nav class ="navigation">
                 <ul>
                     <li class="nav-list"><a href="{{ url_for('index') }}">About</a></li>
-                    <!-- <li class="nav-list"><a href="{{ url_for('visualizations') }}">Visualizations</a></li>
-                    <li class="nav-list"><a href="{{ url_for('maps') }}">Geoviz</a></li>
-                    <li class="nav-list"><a href="{{ url_for('interactive') }}">Interactive</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -40,9 +36,6 @@
         <script src="{{ url_for('static', filename='js/d3.v5.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/mpld3.v0.5.2.js') }}"></script>
         <script src="{{ url_for('static', filename='js/mpld3.v0.5.2.min.js') }}"></script>
-        <!-- <script>
-            Plotly.newPlot("myPlot", {{ fig | safe }})
-        </script> -->
 
     </body>
 
