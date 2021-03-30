@@ -13,9 +13,9 @@ from uss_russell import russ_map
 app = Flask(__name__)
 
 @app.route("/")
-def home():
+def index():
     fig = russ_map()
-    return render_template("./templates/index.html", fig=fig)
+    return render_template("index.html", fig=fig)
 
 # @app.route("/maps")
 # def map():
