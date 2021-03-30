@@ -15,7 +15,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     fig = russ_map()
-    return render_template("russ.html", fig=fig)
+    return render_template("index.html", fig=fig)
 
 # @app.route("/maps")
 # def map():
