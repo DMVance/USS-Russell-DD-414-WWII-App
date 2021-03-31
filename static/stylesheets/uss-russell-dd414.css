@@ -180,6 +180,12 @@ nav a:hover::before {
 }
 
 /* ---- index page ---- */
+body {
+    /* font-family: 'Raleway'; */
+    /* height: 1640px; */
+    background-color: navy; 
+} 
+
 .main-summary p {
     font-family: "Cheltenham";
     font-weight: normal;
