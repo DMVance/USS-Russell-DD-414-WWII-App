@@ -181,7 +181,7 @@ nav a:hover::before {
 
 /* ---- index page ---- */
 body {
-    background-color: navy; 
+    background-color: #444; 
 } 
 
 .main-summary p {
