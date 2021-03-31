@@ -159,7 +159,7 @@ def russ_map():               # Have to use JS format to render on webpage? This
         hover_data=["date", "location", "comment"],
         title="Events and Places of the USS Russell DD 414 - WWII",
         mapbox_style="basic",
-        width=1100,
+        width=1250,
         height=900,
         animation_frame="event_date",  # The single line that brings animation to the map based on the parameter indicated
     )
