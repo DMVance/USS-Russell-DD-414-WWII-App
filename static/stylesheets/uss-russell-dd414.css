@@ -103,6 +103,7 @@ body {
     font-family: "Cheltenham";
     font-weight: normal;
     color: black;
+    background-color: seashell;
     font-size: 17px;
     text-align: justify;
     text-justify: inter-word;
@@ -111,6 +112,7 @@ body {
 .main-summary h1 {
     font-family: "Cheltenham";
     font-weight: bold;
+    background-color: seashell;
 }
 
 .contributors {
@@ -121,13 +123,13 @@ body {
 .contributors h1 {
     font-family: "Cheltenham";
     font-weight: bold;
+    color: ;
 }
 
 .contributors p {
     font-family: "Cheltenham";
     font-weight: normal;
     font-size: 25px;
-    color: seashell;
 }
 
 .citations{
