@@ -21,53 +21,6 @@
     font-weight: normal;
     }
 
-/* ---- interactive page ---- */
-
-.interaction-header {
-    margin-top: 10px;    
-    font-family: "Cheltenham";
-    font-weight: bold;
-    text-align: center;
-}
-
-.interaction-intro {
-    margin-top: 10px;  
-    font-family: "Cheltenham";
-    font-weight: normal;
-    font-size: 18px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.interaction-intro h2 {
-    margin-top: 10px;    
-    font-family: "Cheltenham";
-    font-weight: bold;
-    text-align: center;
-}
-
-.sample-images {
-    width: 80%;
-}
-
-input[type=text] {
-    width: 500px;
- }
-
-.output-div {
-    width: 600px;
-}
-
-.article-scrollable {
-     overflow: auto; 
-     height: 150px;
- }
-
-.input-box {
-     margin-bottom: 30px;
- }
-
-
 /* ---- nav bar for all pages ---- */
 /* format header */
 .header {
@@ -86,7 +39,6 @@ input[type=text] {
     font-size: 80px;
     color: maroon;
 }
-
 
 /* define navigation block */
 .navigation {
@@ -142,46 +94,9 @@ nav a:hover::before {
     width: 100%;
 }
 
-
-/* ---- visualization page ---- */
-
-.visualization-header {
-    margin-top: 10px;    
-    font-family: "Cheltenham";
-    font-weight: bold;
-    text-align: center;
-}
-
-.visualization-intro {
-    margin-top: 10px;  
-    font-family: "Cheltenham";
-    font-weight: normal;
-    font-size: 18px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-#visualizations {
-    max-width: 90%;
-}
-
-.plots {
-    height: 100%;
-    width: 100%;
-}
-
-.summary {
-    margin-top: 100px;
-    font-family: "Cheltenham";
-    font-weight: normal;
-    font-size: 18px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
 /* ---- index page ---- */
 body {
-    background-color: navy; 
+    background-color: rgb(2, 2, 95); 
 } 
 
 .main-summary p {
@@ -212,6 +127,7 @@ body {
     font-family: "Cheltenham";
     font-weight: normal;
     font-size: 25px;
+    color: seashell;
 }
 
 .citations{
@@ -232,34 +148,4 @@ body {
     font-size: 20px;
     padding: 0;
     margin: 0;
-}
-
-/* ---- maps page ---- */
-
-#all-maps {
-    max-width: 90%;
-}
-
-.maps {
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.map-summary {
-    margin-top: 10px;
-    font-family: "Cheltenham";
-    font-weight: normal;
-    font-size: 18px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.maps-header {
-    font-family: "Cheltenham";
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
 }
