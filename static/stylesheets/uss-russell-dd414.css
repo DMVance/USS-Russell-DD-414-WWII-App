@@ -96,7 +96,7 @@ nav a:hover::before {
 
 /* ---- index page ---- */
 body {
-    background-color: rgb(2, 2, 95); 
+    background-color: rgb(1, 1, 58); 
 } 
 
 .main-summary p {
@@ -118,29 +118,33 @@ body {
 .contributors {
     text-align: center;
     color: black;
+    background-color: seashell;
 }
 
 .contributors h1 {
     font-family: "Cheltenham";
     font-weight: bold;
-    color: ;
+    background-color: seashell;
 }
 
 .contributors p {
     font-family: "Cheltenham";
     font-weight: normal;
     font-size: 25px;
+    background-color: seashell;
 }
 
 .citations{
     text-align: center;
     color: black;
     margin-bottom: 40px;
+    background-color: seashell;
 }
 
 .citations h1 {
     font-family: "Cheltenham";
     font-weight: bold;
+    background-color: seashell;
 }
 
 .citations ul {
@@ -150,4 +154,5 @@ body {
     font-size: 20px;
     padding: 0;
     margin: 0;
+    background-color: seashell;
 }
