@@ -38,7 +38,7 @@ def index():
 
 @app.route("/places")
 def places():
-    "The Places page is up and running!"
+    print("The Places page is up and running!")
     return render_template("places.html")
 
 # @app.route("/things")
