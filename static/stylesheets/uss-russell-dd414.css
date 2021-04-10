@@ -40,6 +40,14 @@
     color: maroon;
 }
 
+.header h2 {
+    text-align: center;
+    padding-top: 75px;
+    font-family: "Chomsky";
+    font-size: 60px;
+    color: maroon;
+}
+
 /* define navigation block */
 .navigation {
     display: block;
