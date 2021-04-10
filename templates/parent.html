@@ -15,15 +15,19 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/uss-russell-dd414.css') }}">
         <title>DD-414</title>
-        
     </head>
+
     <body>
 
         <div class="header">
             <h1 class="main-title">USS Russell DD-414</h1>
+            <h2 class="main-title">WWII Destroyer</h2>
             <nav class ="navigation">
                 <ul>
-                    <li class="nav-list"><a href="{{ url_for('index') }}">WWII Destroyer</a></li>
+                    <li class="nav-list"><a href="{{ url_for('index') }}">Home</a></li>
+                    <li class="nav-list"><a href="{{ url_for('places') }}">Places</a></li>
+                    <!-- <li class="nav-list"><a href="{{ url_for('maps') }}">Geoviz</a></li>
+                    <li class="nav-list"><a href="{{ url_for('interactive') }}">Interactive</a></li> -->
                 </ul>
             </nav>
         </div>
