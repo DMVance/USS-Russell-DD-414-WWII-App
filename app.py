@@ -36,9 +36,9 @@ def index():
 # def bios():
 #     return
 
-# @app.route("/places")
-# def places():
-#     return
+@app.route("/places")
+def places():
+    return "The places page is up and running!"
 
 # @app.route("/things")
 # def resources():
