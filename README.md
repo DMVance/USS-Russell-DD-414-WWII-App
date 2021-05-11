@@ -26,3 +26,6 @@ This app, a work in progress, documents the history of the USS Russell, the ship
 <img src=./static/img/Page_Header.jpg width=1000></img>
 <img src=./static/img/Plotly_Map.jpg width=1000></img>
 <img src=./static/img/Background_and_Citations.jpg width=1000></img>
+
+# Ongoing Work
+### I have temporarily paused work on this while I make progress on another project.  When I return to this app, my top priorities are to continue building the database of events that are displayed in the interactive map, improve on UI/UX features, and fill the site with plenty of story-telling text.
