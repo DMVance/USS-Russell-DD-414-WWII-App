@@ -22,3 +22,7 @@ This app, a work in progress, documents the history of the USS Russell, the ship
 * https://en.wikipedia.org/wiki/USS_Russell_(DD-414)
 * https://www.history.navy.mil/research/histories/ship-histories/danfs/r/russell.html
 
+# Images
+<img src=./static/img/Page_Header.jpg width=1000></img>
+<img src=./static/img/Plotly_Map.jpg width=1000></img>
+<img src=./static/img/Background_and_Citations.jpg width=1000></img>
